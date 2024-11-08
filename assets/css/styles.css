@@ -58,11 +58,11 @@ body {
   /* Optional: Adjust styles for smaller screens */
   @media (max-width: 768px) {
     .navbar {
-      width: 200px !important; /* Narrower navbar on smaller screens */
-      min-width: 200px;
+      width: 100px !important; /* Narrower navbar on smaller screens */
+      min-width: 100px;
     }
     .main-content {
-      padding-left: 200px !important;
+      padding-left: 0px !important;
     }
   }
   .section {
