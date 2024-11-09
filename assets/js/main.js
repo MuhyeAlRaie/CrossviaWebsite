@@ -1,7 +1,9 @@
-// Initialize AOS library for animations
-document.addEventListener('DOMContentLoaded', function () {
-    AOS.init({
-      duration: 1200, // Animation duration
-      once: true      // Whether animation should happen only once
-    });
-  });
+// Initialize AOS (Animate on Scroll)
+AOS.init();
+
+// Handle mobile sidebar toggle
+const sidebar = document.querySelector('.sidebar');
+const navbarToggler = document.querySelector('.navbar-toggler');
+navbarToggler.addEventListener('click', () => {
+  sidebar.classList.toggle('active');
+});

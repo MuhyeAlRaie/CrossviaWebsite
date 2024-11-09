@@ -1,83 +1,121 @@
-/* Body and Font Styling */
+/* Custom styles */
 body {
-    font-family: 'Changa', sans-serif;
-    color: #3F3F3F;
-  }
-  h1, h2, h3, .navbar-brand {
-    font-family: 'Changa SemiBold', sans-serif;
-    color: #32879F;
-  }
-  
- /* Sticky Navbar Styling */
-.navbar {
-    position: sticky;
+  font-family: 'Changa' , sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1,h2 {
+
+  color: #32879F;
+}
+
+/* Fixed Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100vh;
+  background-color: #32879F;
+  color: white;
+  padding: 20px;
+  transition: left 0.3s ease;
+  z-index: 999;
+  text-align: center;
+  justify-content: center;
+}
+
+.sidebar .navbar-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar img {
+  width: 100%;
+}
+
+.content-wrapper {
+  margin-left: 250px;
+  transition: margin-left 0.3s ease;
+}
+
+/* Content Section */
+.content-section {
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Footer */
+.footer {
+  background-color: #fff;
+  color: #32879F;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer a {
+  color: #A6A6A6;
+  text-decoration: none;
+}
+
+
+.footer a:hover {
+  text-decoration: none;
+  color: #32879F;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  /* Sidebar should be hidden off-screen on mobile */
+  .sidebar {
+    left: -250px;
+    position: fixed;
     top: 0;
-    height: 100vh;
-    width: 300px !important; /* Set new width with !important */
-    min-width: 300px; /* Ensure minimum width is maintained */
-    background-color: #32879F;
-    border-right: 1px solid #A6A6A6;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  .navbar-brand {
-    margin: 1rem 0;
-    color: #ffffff;
+    height: 100%;
   }
 
-  /* Brand logo styling */
-.brand-logo {
-    max-width: 100%; /* Adjust based on your navbar width */
-    max-height: 125px; /* Adjust height as needed */
-    margin: 1rem 0;
+  /* Mobile navbar */
+  .navbar-toggler {
+    display: block;
   }
-  .nav-item .nav-link {
-    color: #ffffff;
-    font-weight: 600;
-    padding: 0.5rem;
-  }
-  .social-icons {
-    display: flex;
-    gap: 10px;
-  }
-  .social-icon {
-    font-size: 1.5rem;
-    color: #ffffff;
-    transition: color 0.3s;
-  }
-  .social-icon:hover {
-    color: #A6A6A6;
-  }
-  
-  /* Adjust main content padding to align with new navbar width */
-.main-content {
-    padding-left: 0 !important; /* Match the increased navbar width */
-  }
-  
-  /* Optional: Adjust styles for smaller screens */
-  @media (max-width: 768px) {
-    .navbar {
-      width: 100px !important; /* Narrower navbar on smaller screens */
-      min-width: 100px;
-    }
-    .main-content {
-      padding-left: 0px !important;
-    }
-  }
-  .section {
-    width: 100vw; /* Full viewport width */
-    height: 100vh; /* Full viewport height */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-size: cover;
-    background-position: center;
+
+  .navbar-collapse {
+    width: 100%;
     text-align: center;
   }
-  .section h2, .section p {
-    color: #ffffff;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 1rem;
-    border-radius: 8px;
+
+  .navbar-nav {
+    display: block;
+    margin-top: 10px;
   }
+
+  .navbar-nav .nav-item {
+    margin: 10px 0;
+  }
+
+  .sidebar.active {
+    left: 0;
+  }
+
+  .content-wrapper {
+    margin-left: 0;
+  }
+  
+  /* Fixed top navbar on mobile */
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background-color: #32879F;
+    padding: 10px 0;
+  }
+}
