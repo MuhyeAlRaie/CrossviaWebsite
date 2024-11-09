@@ -1,6 +1,6 @@
 /* Custom styles */
 body {
-  font-family: 'Changa' , sans-serif;
+  font-family: 'Changa', sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -35,9 +35,97 @@ h1,h2 {
   width: 100%;
 }
 
+/* Social Media Icons */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto; /* Push social icons to the bottom */
+}
+
+.social-icon {
+  font-size: 24px;
+  transition: color 0.3s ease;
+  color: #fff;
+}
+
+.social-icon:hover {
+  color: #A6A6A6; /* Change color on hover */
+}
+
+.social-icon i {
+  margin: 10px;
+}
+
 .content-wrapper {
   margin-left: 250px;
   transition: margin-left 0.3s ease;
+}
+
+#hero {
+  justify-items: center;
+
+}
+#hero h2 {
+
+  color: #fff;
+}
+.hero-title {
+
+  margin-top: 50%;
+}
+
+.hero-title span {
+
+color: #fff;}
+
+
+.about-us-box {
+
+  background-color: #32879F;
+  border-top: 30px solid #fff;
+  text-align: justify;
+  padding: 10px 20px;
+  
+}
+
+#about-us p{
+font-size: 1.5rem;
+color: #fff;
+
+}
+
+/* Floating Football Animation */
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-50px); /* Move up */
+  }
+  100% {
+    transform: translateY(0); /* Move back to the original position */
+  }
+}
+
+.floating-football {
+  position: absolute;
+  top: 20%; /* Adjust vertical position */
+  right: 10%; /* Adjust horizontal position */
+  max-width: 150px; /* Adjust max width for responsiveness */
+  width: 15vw; /* Responsive width based on viewport */
+  z-index: 2; /* Ensure it floats above other elements */
+  
+  /* Add floating animation */
+  animation: float 3s ease-in-out infinite;
+}
+
+@media (max-width: 768px) {
+  .floating-football {
+    top: 30%; /* Adjust position for smaller screens */
+    right: 5%; /* Adjust position for smaller screens */
+    max-width: 100px; /* Reduce size on smaller screens */
+  }
 }
 
 /* Content Section */
@@ -45,6 +133,13 @@ h1,h2 {
   min-height: 100vh;
   background-size: cover;
   background-position: center;
+
+}
+.sidebar,
+.navbar,
+.footer,
+.content-section {
+  font-family: 'Changa', sans-serif;
 }
 
 /* Footer */
