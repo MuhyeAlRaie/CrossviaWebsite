@@ -7,3 +7,8 @@ const navbarToggler = document.querySelector('.navbar-toggler');
 navbarToggler.addEventListener('click', () => {
   sidebar.classList.toggle('active');
 });
+
+// preloader
+window.addEventListener("load", function () {
+  document.getElementById("preloader").style.display = "none";
+});
