@@ -309,6 +309,7 @@ color: #fff;
 #expertise h2{
   font-size: 4rem;
   color: #f1f1f1;
+  text-shadow: -2px 0px 11px #151515;
 }
 #expertise .expertise-description{
   font-size: 2rem;
@@ -418,4 +419,24 @@ color: #fff;
   width: 100px;
   animation: float-alt 6s ease-in-out infinite;
   z-index: 1;
+}
+
+#career {
+  text-align: center;
+}
+#career h2{
+  font-size: 4rem;
+  color: #f1f1f1;
+  text-shadow: -2px 0px 11px #151515;
+
+}
+#career .career-description{
+  font-size: 2rem;
+  color: #f1f1f1;
+}
+
+#career h2  span{
+  font-size: 4rem;
+  color: #32879F;
+  text-shadow: -2px 0px 11px #151515;
 }
