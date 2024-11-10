@@ -493,8 +493,11 @@ preloader
 
 
 .page-title-section {
+  position: relative;
   text-align: center;
   justify-content: center;
+  position: relative;
+  overflow: hidden; /* Hide overflow from video and overlay */
 }
 
 .page-title h1 {
@@ -504,7 +507,7 @@ position: relative;
   justify-content: center;
   color: #fff;
   text-shadow: -2px 0px 11px #151515;
-  left: 50px;
+  padding-left: 50px;
   top: 25vh;
 }
 
