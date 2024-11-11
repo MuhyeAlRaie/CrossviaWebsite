@@ -383,7 +383,6 @@ preloader
   font-size: 1rem;
   margin: 0;
   text-align: justify;
-  text-shadow: -2px 0px 11px #151515;
 }
 
 .expertise-list .col-md-3:hover p {
@@ -488,7 +487,7 @@ preloader
 }
 
 /* ****************************************************************/
-/* ABOUT US PAGE */
+/* Page Title */
 /* ****************************************************************/
 
 
@@ -519,3 +518,207 @@ position: relative;
   font-size: 3rem;
 }
 }
+
+/* ***********************************************************
+ABOUT US PAGE 
+***************************************************************/
+
+#about-us-intro p {
+  font-size: 1.5rem;
+  color: #fff;
+}
+.about-us-intro-box {
+  background-color: #32879f;
+  border-top: 30px solid #fff;
+  text-align: justify;
+  padding: 10px 20px;
+}
+
+#about-us-intro{
+padding-left: 50%;
+
+}
+
+#about-us-intro h2 {
+  font-size: 4rem;
+  color: #f1f1f1;
+  text-shadow: -2px 0px 11px #151515;
+}
+
+@media (max-width:768px) {
+
+  #about-us-intro{
+    padding-left: 0px;
+    
+    }
+    #about-us-intro h2 {
+      text-align: center;
+    }
+}
+
+
+.drift-car {
+  position: absolute;
+  bottom: 10px;
+  left: 200px;
+  width: 500px; /* Adjust size as needed */
+  animation: driftFloat 3s ease-in-out infinite !important;
+  transform-origin: center;
+}
+
+/* Custom Floating Animation */
+@keyframes driftFloat {
+  0%, 100% {
+    transform: translateY(0) rotate(-5deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(5deg);
+  }
+}
+
+
+@media (max-width:768px) {
+   .drift-car {
+
+    bottom: 0px;
+    width: 200px; /* Adjust size as needed */
+    right: 50px ;
+    
+  }
+}
+
+@media (max-width: 360px) {
+  .drift-car {
+
+    bottom: 0px;
+    width: 200px; /* Adjust size as needed */
+    right: 100px ;
+    
+  }
+  
+}
+
+
+#strategic-direction {
+
+  padding-right: 50%;
+  padding-left: 100px;
+
+}
+
+#strategic-direction h2 {
+  font-size: 4rem;
+  color: #f1f1f1;
+  text-shadow: -2px 0px 11px #151515;
+  text-align: center;
+}
+
+#strategic-direction h3 {
+  font-size: 3rem;
+  color: #32879f;
+  text-shadow: -2px 0px 11px #151515;
+}
+
+#strategic-direction p {
+  font-size: 1.5rem;
+  color: #fff;
+  text-shadow: -2px 0px 11px #151515;
+
+}
+
+@media (max-width: 768px) {
+
+  #strategic-direction {
+
+    padding-right: 0;
+    padding-left: 0;
+  
+  }
+  #strategic-direction h3 {
+  text-align: center;
+  }
+  #strategic-direction p {
+    text-align: center;
+    text-shadow: -2px 0px 11px #151515;
+  }
+}
+
+
+#strategic-goal{
+
+  padding-left: 50%;
+}
+
+#strategic-goal h2 {
+  font-size: 4rem;
+  color: #f1f1f1;
+  text-shadow: -2px 0px 11px #151515;
+  text-align: center;
+}
+
+#strategic-goal h3 {
+  font-size: 3rem;
+  color: #32879f;
+}
+
+#strategic-goal p {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+#strategic-goal .odd {
+  box-sizing: border-box;
+
+background-color: #32879f;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.702);
+}
+
+#strategic-goal .odd h3{
+
+  color: #fff;
+  }
+
+  #strategic-goal .odd p{
+
+    color: #fff;
+    }
+
+#strategic-goal .even {
+
+  background-color: #fff;
+  box-sizing: border-box;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.702);
+}
+
+#strategic-goal .even h3{
+
+  color: #32879f;
+  }
+
+  #strategic-goal .even p{
+
+    color: #333;
+    }
+
+
+
+@media (max-width: 768px) {
+
+  #strategic-goal {
+
+    padding-left: 2%;
+  
+  }
+  #strategic-goal h3 {
+  text-align: center;
+  font: 2rem;
+  }
+  #strategic-goal p {
+    text-align: center;
+    text-shadow: -2px 0px 11px #151515;
+    font-size: 1rem;
+  }
+}
+
+
