@@ -252,10 +252,25 @@ preloader
   background-color: #fff;
   color: #32879f;
   padding: 20px;
-  text-align: center;
+  text-align: left;
+}
+
+.footer .quick-link {
+
+padding-left: 100px;
+}
+
+@media (max-width:768px) {
+
+  .footer .quick-link {
+
+    padding-left: 8px;
+    }
+  
 }
 
 .footer ul {
+  text-align: left;
   list-style: none;
   padding-left: 0;
 }
@@ -544,7 +559,8 @@ ABOUT US PAGE
 }
 
 #about-us-intro{
-padding-left: 50%;
+padding-left: 55%;
+padding-right: 50px;
 
 }
 
@@ -569,7 +585,7 @@ padding-left: 50%;
 .drift-car {
   position: absolute;
   bottom: 10px;
-  left: 200px;
+  left: 300px;
   width: 500px; /* Adjust size as needed */
   animation: driftFloat 3s ease-in-out infinite !important;
   transform-origin: center;
@@ -655,7 +671,7 @@ padding-left: 50%;
 
 #strategic-goal{
 
-  padding-left: 50%;
+  padding-left: 40%;
 }
 
 #strategic-goal h2 {
@@ -678,15 +694,15 @@ padding-left: 50%;
 }
 
 #strategic-goal .odd {
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
 
-background-color: #32879f;
-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.702);
+/* background-color: #32879f; */
+/* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.702); */
 }
 
 #strategic-goal .odd h3{
-
-  color: #fff;
+  text-shadow: -2px 0px 5px #151515;
+  color: #32879f;
   }
 
   #strategic-goal .odd p{
@@ -696,20 +712,20 @@ box-shadow: 0 4px 12px rgba(0, 0, 0, 0.702);
 
 #strategic-goal .even {
 
-  background-color: #fff;
-  box-sizing: border-box;
+  /* background-color: #fff; */
+  /* box-sizing: border-box; */
 
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.702);
+  /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.702); */
 }
 
 #strategic-goal .even h3{
-
+  text-shadow: -2px 0px 5px #151515;
   color: #32879f;
   }
 
   #strategic-goal .even p{
 
-    color: #333;
+    color: #fff;
     }
 
 
@@ -760,7 +776,6 @@ font-size: 1.5rem;
 }
 
 #core-value .col-md-4 {
-  border: #f1f1f1 1px solid;
   margin-top: 40px;  
  
 }
