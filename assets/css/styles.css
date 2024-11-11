@@ -129,6 +129,7 @@ preloader
 }
 
 #hero .hero-title {
+  font-size: 5rem;
   margin-top: 50%;
   color: #fff;
   z-index: 2; /* Ensures text stays on top of overlay */
@@ -159,6 +160,14 @@ preloader
     right: 10px; /* Distance from right of the viewport */
     width: 500px; /* Adjust the size of the image */
     height: 500px;
+  }
+}
+
+@media (max-width: 360px) {
+  .floating-player {
+    right: 0px; /* Distance from right of the viewport */
+    width: 250px; /* Adjust the size of the image */
+    height: 250px;
   }
 }
 
@@ -221,7 +230,7 @@ preloader
   .floating-football {
     top: 30%; /* Adjust position for smaller screens */
     right: 5%; /* Adjust position for smaller screens */
-    max-width: 100px; /* Reduce size on smaller screens */
+    max-width: 75px; /* Reduce size on smaller screens */
   }
 }
 
@@ -548,7 +557,7 @@ padding-left: 50%;
 @media (max-width:768px) {
 
   #about-us-intro{
-    padding-left: 0px;
+    padding-left: 2%;
     
     }
     #about-us-intro h2 {
@@ -590,9 +599,9 @@ padding-left: 50%;
 @media (max-width: 360px) {
   .drift-car {
 
-    bottom: 0px;
-    width: 200px; /* Adjust size as needed */
-    right: 100px ;
+    bottom: 2px;
+    width: 150px; /* Adjust size as needed */
+    right: 50px ;
     
   }
   
@@ -659,6 +668,8 @@ padding-left: 50%;
 #strategic-goal h3 {
   font-size: 3rem;
   color: #32879f;
+  font-weight: bold;
+
 }
 
 #strategic-goal p {
@@ -716,9 +727,77 @@ box-shadow: 0 4px 12px rgba(0, 0, 0, 0.702);
   }
   #strategic-goal p {
     text-align: center;
-    text-shadow: -2px 0px 11px #151515;
     font-size: 1rem;
   }
 }
 
+#core-value {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
+}
+#core-value h2 {
+
+  font-size: 4rem;
+  color: #f1f1f1;
+  text-shadow: -2px 0px 11px #151515;
+  text-align: center;
+}
+
+#core-value p {
+font-size: 1.5rem;
+  color: #fff;
+  padding: 5px;
+}
+
+#core-value h3 {
+  text-shadow: -2px 0px 11px #151515;
+  color: #32879f;
+  font-weight: bold;
+  margin-top: 5px;
+  font-size: 2rem;
+}
+
+#core-value .col-md-4 {
+  border: #f1f1f1 1px solid;
+  margin-top: 40px;  
+ 
+}
+
+
+@media (max-width: 768px) {
+
+
+
+}
+
+.tennis-ball {
+  position: absolute;
+  width: 50px; /* Adjust size as needed */
+  animation: randomMove 10s ease-in-out infinite alternate;
+}
+
+/* Random movement animation */
+@keyframes randomMove {
+  0% {
+    top: 0%;
+    left: 0%;
+  }
+  25% {
+    top: 30%;
+    left: 100%;
+  }
+  50% {
+    top: 100%;
+    left: 0%;
+  }
+  75% {
+    top: 40%;
+    left: 80%;
+  }
+  100% {
+    top: 0%;
+    left: 0%;
+  }
+}
